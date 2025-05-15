@@ -525,7 +525,7 @@
 
         imageFilenames.push("00001_Cube_Center_100_Plain_N0px.png");
         for (var j = 2; j <= numImages; j++) {
-          var shift = (j - 1)*2;
+          var shift = j - 1;
           var padded = (j < 10) ? "0000" + j : "000" + j;
           var filename = padded + "_Cube_Center_100_Plain_L" + shift + "px.png";
           imageFilenames.push(filename);
