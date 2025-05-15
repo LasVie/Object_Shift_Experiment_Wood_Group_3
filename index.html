@@ -474,7 +474,7 @@
       choices: ['Continue'],
       on_load: function() {
         const btn = document.querySelector('.jspsych-btn');
-        btn.disabled = true; // initially disabled
+        //btn.disabled = true; // initially disabled
 
         // Record start time for the video
         demoVideoStartTime = Date.now();
@@ -495,7 +495,7 @@
           videoElement.classList.remove('no-progress'); // show timeline
           // Calculate watch time in seconds
           demoVideoWatchTime = (Date.now() - demoVideoStartTime) / 1000;
-          //btn.disabled = false; // enable after video finishes
+          btn.disabled = false; // enable after video finishes
         });
       }
     };
